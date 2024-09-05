@@ -1,4 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local currentVersionOfClient = 100
+
 
 
 local ScriptWindow = Rayfield:CreateWindow({
@@ -19,7 +21,7 @@ local ScriptWindow = Rayfield:CreateWindow({
     KeySettings = {
        Title = "Welcome back!",
        Subtitle = "Key System",
-       Note = "Join the discord to get the weekly keys.",
+       Note = "Welcome to the ultimate debugging Tool for developers. DarkHub. Test your games on a new level. You can get the free key to enter in our discord server. https://discord.gg/9Sw9BknE",
        FileName = "Key420876", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
        SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
        GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
@@ -136,6 +138,8 @@ local ScriptWindow = Rayfield:CreateWindow({
 
  local Paragraph2 = copyTab:CreateParagraph({Title = "About us", Content = "This hub was developed by LetsScripts, a LetsStudios team. The developers are: *LetsManuel *BillyWasTaken"})
 
+ local Paragraph1 = copyTab:CreateParagraph({Title = "DarkHub Version", Content = "Current version of Client:",currentVersionOfClient})
+ 
  local killButton = localTab:CreateButton({
     Name = "Reset Character",
     Callback = function()
