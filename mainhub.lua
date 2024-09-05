@@ -569,7 +569,14 @@ else
      })
 
 
+     local devButton = MainTab:CreateButton({
+        Name = "Open Developer Console",
+        Callback = function()
+            local StarterGui = game:GetService("StarterGui") 
 
+            StarterGui:SetCore("DevConsoleVisible", true)
+        end,
+     })
 
 
 end
