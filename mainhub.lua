@@ -1,4 +1,9 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local currentVersionOfClient = 100
+local versionURL = loadstring(game:HttpGet(('https://raw.githubusercontent.com/LetsScripts/darkblox.hub/main/data/version'),true))()
+
+print(versionURL)
+
 
 local ScriptWindow = Rayfield:CreateWindow({
     Name = "DarkBlox Hub",
