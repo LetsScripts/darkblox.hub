@@ -31,7 +31,7 @@ if game.PlaceId == 15894064789 or game.PlaceId == 16120729950 or game.PlaceId ==
 
      local InfoTabBlocked = Window:CreateTab("Info", nil) -- Title, Image
 
-     local Paragraph = InfoTabBlocked:CreateParagraph({Title = "Why is this Hub blocked?", Content = "This hub is not blocked. This game is just standing under special protection, due to explotiers may abusing this hub. You can use the hub in your game to test some things out. Thanks for your understanding - LetsScripts"})
+     local Paragraph = InfoTabBlocked:CreateParagraph({Title = "Why is this Hub blocked?", Content = "This hub is not blocked. This game is just standing under special protection, due to exploiters may abusing this hub. You can use the hub in your game to test some things out. Thanks for your understanding - LetsScripts"})
      local Paragraph = InfoTabBlocked:CreateParagraph({Title = "Are you the game owner?", Content = "Please message us on our discord server. This game can not run this debug hub to protect the game."})
      
      Rayfield:Notify({
