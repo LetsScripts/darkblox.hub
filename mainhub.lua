@@ -1,5 +1,4 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-return
 
 
 local ScriptWindow = Rayfield:CreateWindow({
