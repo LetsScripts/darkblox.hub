@@ -1,8 +1,40 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local currentVersionOfClient = 100
 
+
 if game.PlaceId == 15894064789 then
-    Rayfield:Notify({
+    local Window = Rayfield:CreateWindow({
+        Name = "Blocked.",
+        LoadingTitle = "403 Forbidden",
+        LoadingSubtitle = "by LetsScripts",
+        ConfigurationSaving = {
+           Enabled = true,
+           FolderName = nil, -- Create a custom folder for your hub/game
+           FileName = "blackhubblocked"
+        },
+        Discord = {
+           Enabled = false,
+           Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+           RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+        },
+        KeySystem = false, -- Set this to true to use our key system
+        KeySettings = {
+           Title = "Untitled",
+           Subtitle = "Key System",
+           Note = "No method of obtaining the key is provided",
+           FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+           SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+           GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+           Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+        }
+     })
+
+     local InfoTabBlocked = Window:CreateTab("Info", nil) -- Title, Image
+
+     local Paragraph = InfoTabBlocked:CreateParagraph({Title = "Why is this Hub blocked?", Content = "This hub is not blocked. This game is just standing under special protection, due to explotiers may abusing this hub. You can use the hub in your game to test some things out. Thanks for your understanding - LetsScripts"})
+     local Paragraph = InfoTabBlocked:CreateParagraph({Title = "Are you the game owner?", Content = "Please message us on our discord server. This game can not run this debug hub to protect the game."})
+     
+     Rayfield:Notify({
         Title = "403 Forbidden!",
         Content = "You can not run DarkHub in this game.",
         Duration = 6.5,
@@ -42,9 +74,7 @@ if game.PlaceId == 15894064789 then
         },
      },
      })
-
-    end
-if game.PlaceId == 15894064789 then
+     
 else
     local ScriptWindow = Rayfield:CreateWindow({
         Name = "DarkBlox Hub",
