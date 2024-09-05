@@ -2,7 +2,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local currentVersionOfClient = 100
 
 
-if game.PlaceId == 15894064789 then
+if game.PlaceId == 15894064789 or game.PlaceId == 16120729950 or game.PlaceId == 16638160974 or game.PlaceId == 16826733888 or game.PlaceId ==  17224032300 or game.PlaceId == 18461794102 or game.PlaceId == 5495994056 then
     local Window = Rayfield:CreateWindow({
         Name = "Blocked.",
         LoadingTitle = "403 Forbidden",
