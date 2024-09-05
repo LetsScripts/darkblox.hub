@@ -1,7 +1,4 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-local currentVersionOfClient = 100
-local versionloader = loadstring(game:HttpGet('https://raw.githubusercontent.com/LetsScripts/darkblox.hub/main/data/version'))()
-local newestVersion = versionloader()
 
 
 local ScriptWindow = Rayfield:CreateWindow({
