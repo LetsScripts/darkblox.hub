@@ -1,1 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Style Website</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            background: radial-gradient(circle, rgba(0,0,50,1) 20%, rgba(0,0,30,1) 60%, rgba(0,0,20,1) 100%);
+            color: #fff;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Dark blue accents */
+        h1, p {
+            color: #80bfff;
+        }
+
+        /* Galaxy-style background with dark blue accents */
+        .accent {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 40, 100, 0.5) 10%, rgba(0, 0, 50, 0) 50%);
+            z-index: 1;
+            animation: shift 15s ease-in-out infinite;
+        }
+
+        @keyframes shift {
+            0% {
+                transform: scale(1) translateX(0);
+            }
+            50% {
+                transform: scale(1.05) translateX(20px);
+            }
+            100% {
+                transform: scale(1) translateX(0);
+            }
+        }
+
+        /* Container for content */
+        .container {
+            text-align: center;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 4rem;
+            letter-spacing: 10px;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 0.7);
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #00ccff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: magenta;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="accent"></div>
+
+    <div class="container">
+        <h1>DarkBlox.hub</h1>
+        <p>Level up your developing expirience using DarkBlox.hub. Implement now!</p>
+        <!-- Link to download page -->
+        <p><a href="download.html">Learn More</a></p>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Style Website</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            background: radial-gradient(circle, rgba(0,0,50,1) 20%, rgba(0,0,30,1) 60%, rgba(0,0,20,1) 100%);
+            color: #fff;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Dark blue accents */
+        h1, p {
+            color: #80bfff;
+        }
+
+        /* Galaxy-style background with dark blue accents */
+        .accent {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 40, 100, 0.5) 10%, rgba(0, 0, 50, 0) 50%);
+            z-index: 1;
+            animation: shift 15s ease-in-out infinite;
+        }
+
+        @keyframes shift {
+            0% {
+                transform: scale(1) translateX(0);
+            }
+            50% {
+                transform: scale(1.05) translateX(20px);
+            }
+            100% {
+                transform: scale(1) translateX(0);
+            }
+        }
+
+        /* Container for content */
+        .container {
+            text-align: center;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 4rem;
+            letter-spacing: 10px;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 0.7);
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #00ccff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: magenta;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="accent"></div>
+
+    <div class="container">
+        <h1>DarkBlox.hub</h1>
+        <p>Level up your developing expirience using DarkBlox.hub. Implement now!</p>
+        <!-- Link to download page -->
+        <p><a href="download.html">Learn More</a></p>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Galaxy Content</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            background: radial-gradient(circle, rgba(0,0,50,1) 20%, rgba(0,0,30,1) 60%, rgba(0,0,20,1) 100%);
+            color: #fff;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+        }
+
+        /* Galaxy-style background with dark blue accents */
+        .accent {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 40, 100, 0.5) 10%, rgba(0, 0, 50, 0) 50%);
+            z-index: 1;
+            animation: shift 15s ease-in-out infinite;
+        }
+
+        @keyframes shift {
+            0% {
+                transform: scale(1) translateX(0);
+            }
+            50% {
+                transform: scale(1.05) translateX(20px);
+            }
+            100% {
+                transform: scale(1) translateX(0);
+            }
+        }
+
+        /* Content styling */
+        .container {
+            max-width: 800px;
+            padding: 50px;
+            z-index: 2;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 8px;
+            color: #80bfff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #80bfff;
+        }
+
+        /* Download button */
+        .download-btn {
+            margin-top: 50px;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            background-color: #00ccff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: magenta;
+        }
+
+        /* Haptic feedback on button click */
+        .download-btn:active {
+            background-color: #00a3cc;
+        }
+
+        /* Larger paragraphs to allow scrolling */
+        .scrollable-content {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="accent"></div>
+
+    <div class="container">
+        <h1>Download DarkBlox</h1>
+        <p>Scroll down to discover more content and click the button to download DarkBlox.hub.</p>
+
+        <div class="scrollable-content">
+            <p>DarkBlox.hub is a developing Tool to debug your game. Test your anticheat using the top used exploits.</p>
+            <p>This interface may not be used for exploiting or different activites that break the TOS.</p>
+            <p>The lua file can either be copied into your game, or you can just use the loadstring that is linked at the top as a comment.</p>
+            <p>DarkBlox.hub is a new interface, so things may change or be broken. Thanks for using, LetsScripts.</p>
+        </div>
+
+        <button class="download-btn" onclick="hapticFeedback()">Download Now</button>
+    </div>
+
+    <script>
+        // Haptic feedback simulation for button clicks
+        function hapticFeedback() {
+            // Using the Vibration API (works on supported mobile devices)
+            if (navigator.vibrate) {
+                navigator.vibrate(100); // Vibrate for 100ms
+            }
+          open('https://raw.githubusercontent.com/LetsScripts/darkblox.hub/main/mainhub.lua')
+          setTimeout(function() {
+            window.location.href = "thanks.html";
+        }, 500); // Delay for 500ms before redirecting
+            
+        }
+    </script>
+
+</body>
+</html>
 
