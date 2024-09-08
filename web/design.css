@@ -1,0 +1,91 @@
+  /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            background: radial-gradient(circle, rgba(0,0,50,1) 20%, rgba(0,0,30,1) 60%, rgba(0,0,20,1) 100%);
+            color: #fff;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+        }
+
+        /* Galaxy-style background with dark blue accents */
+        .accent {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 40, 100, 0.5) 10%, rgba(0, 0, 50, 0) 50%);
+            z-index: 1;
+            animation: shift 15s ease-in-out infinite;
+        }
+
+        @keyframes shift {
+            0% {
+                transform: scale(1) translateX(0);
+            }
+            50% {
+                transform: scale(1.05) translateX(20px);
+            }
+            100% {
+                transform: scale(1) translateX(0);
+            }
+        }
+
+        /* Content styling */
+        .container {
+            max-width: 800px;
+            padding: 50px;
+            z-index: 2;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 8px;
+            color: #80bfff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #80bfff;
+        }
+
+        /* Download button */
+        .download-btn {
+            margin-top: 50px;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            background-color: #00ccff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: magenta;
+        }
+
+        /* Haptic feedback on button click */
+        .download-btn:active {
+            background-color: #00a3cc;
+        }
+
+        /* Larger paragraphs to allow scrolling */
+        .scrollable-content {
+            margin-top: 30px;
+            text-align: left;
+        }
